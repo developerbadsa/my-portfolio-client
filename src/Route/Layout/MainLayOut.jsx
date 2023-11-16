@@ -1,6 +1,8 @@
-import React from 'react';
+
 import { Helmet } from 'react-helmet-async';
 import Navbar from '../../Components/Shared/Navbar/Navbar';
+import { Outlet } from 'react-router-dom';
+import Footer from '../../Components/Shared/Footer/Footer';
 
 const MainLayOut = () => {
       return (
@@ -9,7 +11,8 @@ const MainLayOut = () => {
                         <title>Home | Rahim Badsa</title>
                   </Helmet>
                   <Navbar></Navbar>
-                  main layout
+                  <Outlet></Outlet>
+                  <Footer></Footer>
             </>
       );
 };
