@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import Navbar from '../../Components/Shared/Navbar/Navbar';
 
 const MainLayOut = () => {
       return (
@@ -7,6 +8,7 @@ const MainLayOut = () => {
                   <Helmet>
                         <title>Home | Rahim Badsa</title>
                   </Helmet>
+                  <Navbar></Navbar>
                   main layout
             </>
       );
