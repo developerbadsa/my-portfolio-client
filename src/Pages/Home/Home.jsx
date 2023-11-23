@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Hero from "./Sections/Hero";
 import Projects from "./Sections/Projects";
+import AboutMe from "./Sections/AboutMe";
 
 const Home = () => {
       return (
@@ -8,8 +9,11 @@ const Home = () => {
                   <Helmet>
                         <title>Home || Rahim Badsa</title>
                   </Helmet>
-                  <Hero></Hero>
-                  <Projects></Projects>
+                  <div className="max-w-6xl mx-auto">
+                        <Hero></Hero>
+                        <Projects></Projects>
+                        <AboutMe></AboutMe>
+                  </div>
             </main>
       );
 };
